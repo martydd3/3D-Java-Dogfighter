@@ -1,3 +1,4 @@
+package main;
 /**
  * CIS 120 HW10
  * (c) University of Pennsylvania
@@ -298,7 +299,7 @@ public class GameCourt extends JPanel {
 		
 		if(instructions)
 		{
-			/*
+			
 			g.setColor(Color.black);
 			g.fillRect(100, 100, 400, 300);
 
@@ -313,7 +314,7 @@ public class GameCourt extends JPanel {
 			g.drawString("and movement. Enemy AI will spawn randomly and try", 120, 300);
 			g.drawString("to track and shoot you down.", 120, 325);
 			g.drawRect(100, 100, 400, 300);
-			*/
+			
 			playing = false;
 		}
 	}

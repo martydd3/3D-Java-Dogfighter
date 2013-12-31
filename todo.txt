@@ -1,9 +1,0 @@
-
-environment (asteroids, stars?)
-
-Cleanup:
-
-Instructions
-
-
-Missile barrage!!!!

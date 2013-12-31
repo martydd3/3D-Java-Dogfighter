@@ -1,3 +1,4 @@
+package main;
 //Martin Deng 2013
 
 import java.awt.Color;

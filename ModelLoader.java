@@ -1,7 +1,8 @@
+package main;
 //Martin Deng 2013
 import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 
@@ -28,9 +29,9 @@ public class ModelLoader {
 	
 	//load files at the beginning of the game
 	public static void loadModels(){
-		flyer = loadFile("flyer.txt");
-		bullet = loadFile("bullet.txt");
-		explosion = loadFile("explosion.txt");
+		flyer = loadFile("resources/flyer.txt");
+		bullet = loadFile("resources/bullet.txt");
+		explosion = loadFile("resources/explosion.txt");
 	}
 	
 	//Load an array of polygons from a file with name fileName
@@ -38,9 +39,15 @@ public class ModelLoader {
 	{
 		try {
 			//create a new reader and an array of polygons to store
-			//the alues read
+			//the values read
+			
+			BufferedReader reader = new BufferedReader(new InputStreamReader(
+					ModelLoader.class.getResourceAsStream(fileName)));
+			
+			/*
 			BufferedReader reader = new BufferedReader(
 					new FileReader(fileName));
+			*/
 			
 			int faces = Integer.parseInt(reader.readLine());
 			

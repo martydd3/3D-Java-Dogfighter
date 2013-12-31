@@ -1,3 +1,4 @@
+package main;
 /**
  * Holds an array of coordinates in 3d, as well as the average location of
  * these coordinates to be used for ordering depending on their distance
